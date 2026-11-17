@@ -24,7 +24,7 @@
   <div class="navbar-title container clearfix">
     <a href="https://www.georgetown.edu/" class="gu-logo d-lg-none pull-md-left pull-sm-left pull-xs-left" aria-label="Georgetown University.">
       <img src="assets/img/georgetown-logo-mark.webp" width="40" height="28" alt="Georgetown University."></a>
-    <h1 id="site-title"><a href="index.html" class="site-name">Hybrid and Multi-Campus Upper-Level Research Seminar Series for Indian Ocean Studies</a></h1>
+    <h1 id="site-title"><a href="index.html" class="site-name">Upper-Level Research Seminar Series for Indian Ocean Studies</a></h1>
   </div>
   <div class="navbar-bottom"><div class="container">
     <nav class="menu" id="top-menu-links" aria-label="Primary"><ul class="nav"><li class="nav-item"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="faculty.html" class="nav-link">Faculty</a></li><li class="nav-item nav-current-item"><a href="internships.html" class="nav-link" aria-current="page">Internship Opportunities</a></li><li class="nav-item"><a href="student-work.html" class="nav-link">Student Work</a></li><li class="nav-item"><a href="research-colloquium.html" class="nav-link">Research Colloquium</a></li></ul></nav>
@@ -87,4 +87,11 @@
   </div>
 </div></div></footer>
 </div></div>
+<script>
+/* sticky header: collapses to a slim bar after scrolling, like the Georgetown department sites */
+(function(){var h=document.querySelector('header.site-header'),m=document.getElementById('main-content');
+function size(){var c=h.classList.contains('collapsed');h.classList.remove('collapsed');m.style.paddingTop=h.offsetHeight+'px';if(c)h.classList.add('collapsed')}
+function onScroll(){h.classList.toggle('collapsed',window.scrollY>40)}
+size();onScroll();window.addEventListener('resize',size);window.addEventListener('scroll',onScroll,{passive:true});})();
+</script>
 </body></html>

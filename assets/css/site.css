@@ -1,5 +1,6 @@
 /* ---- site-specific additions on top of the Georgetown theme ---- */
-#site-title{font-size:clamp(1.35rem,1rem + 1.2vw,2.1rem);line-height:1.2;max-width:900px;padding-right:1rem}
+#site-title{font-size:clamp(1.35rem,1rem + 1.2vw,2.1rem);line-height:1.2;padding-right:1rem}
+@media (min-width:768px){#site-title{white-space:nowrap;font-size:clamp(1.35rem,2.4vw,2.1rem)}}
 #site-title a.site-name{text-decoration:none}
 .navbar-title{padding-bottom:1rem}
 header.site-header{background-image:url(../img/header-seal.webp)}
@@ -22,6 +23,10 @@ header.site-header{background-image:url(../img/header-seal.webp)}
 .iow-table td{border-bottom:1px solid #e3e6ea;padding:.6rem .8rem;vertical-align:top}
 .footer-contact p{margin-bottom:.25rem}
 #main-content{margin-top:0!important;padding-top:0}
+header.site-header{position:fixed;top:0;left:0;right:0;z-index:10;transition:box-shadow .2s}
+header.site-header.collapsed{box-shadow:0 2px 8px rgba(0,0,0,.25)}
+header.collapsed+#main-content{margin-top:0!important}
+.iow-faculty dialog{z-index:20}
 .campus-head{margin-top:2rem;color:#041e42;border-bottom:1px solid #e3e6ea;padding-bottom:.35rem}
 .iow-cards .iow-empty{grid-column:1/-1;margin:0}
 .table-wrap{overflow-x:auto}
@@ -32,3 +37,4 @@ header.site-header{background-image:url(../img/header-seal.webp)}
 a.iow-card-link{color:inherit;text-decoration:none;transition:box-shadow .15s,border-color .15s}
 a.iow-card-link:hover,a.iow-card-link:focus-visible{box-shadow:0 4px 14px rgba(4,30,66,.15);border-top-color:#366fac;color:inherit;text-decoration:none}
 a.iow-card-link p{color:#4a4a4a}
+@media (min-width:992px){header.site-header.collapsed .navbar-bottom{display:none!important}}
