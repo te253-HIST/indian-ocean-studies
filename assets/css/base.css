@@ -1,0 +1,82 @@
+.gu-table div.center{text-align:center}.gu-table.table-column-80-20 thead th:first-child{width:80%}.gu-table.table-column-80-20 thead th:nth-child(2){width:20%}.gu-table.table-column-50-50 thead th:first-child,.gu-table.table-column-50-50 thead th:nth-child(2){width:50%}.gu-table.table-column-20-80 thead th:first-child{width:20%}.gu-table.table-column-20-80 thead th:nth-child(2){width:80%}.gu-table.table-column-60-20-20 thead th:first-child{width:60%}.gu-table.table-column-60-20-20 thead th:nth-child(2),.gu-table.table-column-60-20-20 thead th:nth-child(3){width:20%}.gu-table.table-column-33-33-33 thead th:first-child,.gu-table.table-column-33-33-33 thead th:nth-child(2),.gu-table.table-column-33-33-33 thead th:nth-child(3){width:33%}.gu-table.table-column-20-20-60 thead th:first-child,.gu-table.table-column-20-20-60 thead th:nth-child(2){width:20%}.gu-table.table-column-20-20-60 thead th:nth-child(3){width:60%}/*
+Theme Name: Whitehaven Nu
+Author: Georgetown University Web Services
+Description: Georgetown University's Drupal theme ported to WordPress
+Version: 9.10.0
+*/
+
+/**
+ * the following are typically produced by the default theme.json file located
+ * in wp-includes/theme.json.  https://core.trac.wordpress.org/ticket/56970
+ * indicates that WP devs are working on the bug that is preventing these
+ * styles from being emitted by core, but until then, we're including them
+ * here.
+ */
+
+:where(.is-layout-flex) {
+  gap: 0.5em;
+}
+
+body .is-layout-flow > .alignleft {
+  float: left;
+  margin-inline-start: 0;
+  margin-inline-end: 2em;
+}
+
+body .is-layout-flow > .alignright {
+  float: right;
+  margin-inline-start: 2em;
+  margin-inline-end: 0;
+}
+
+body .is-layout-flow > .aligncenter {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+body .is-layout-constrained > .alignleft {
+  float: left;
+  margin-inline-start: 0;
+  margin-inline-end: 2em;
+}
+
+body .is-layout-constrained > .alignright {
+  float: right;
+  margin-inline-start: 2em;
+  margin-inline-end: 0;
+}
+
+body .is-layout-constrained > .aligncenter {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+body
+  .is-layout-constrained
+  > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  max-width: var(--wp--style--global--content-size);
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+body .is-layout-constrained > .alignwide {
+  max-width: var(--wp--style--global--wide-size);
+}
+
+body .is-layout-flex {
+  display: flex;
+}
+
+body .is-layout-flex {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+body .is-layout-flex > * {
+  margin: 0;
+}
+
+:where(.wp-block-columns.is-layout-flex) {
+  gap: 2em;
+}
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
